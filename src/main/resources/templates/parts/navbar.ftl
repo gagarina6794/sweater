@@ -15,6 +15,9 @@
             <#if isAdmin>
             <li><a class="nav-link" href="/user">User List</a></li>
             </#if>
+            <#if user??>
+            <li><a class="nav-link" href="/user/profile">Profile</a></li>
+            </#if>
         </ul>
 
         <div class="navbar-text mr-3">${name}</div>
